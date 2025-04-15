@@ -2,7 +2,7 @@
 
 import Slider from "@/components/amenities";
 import BannerSlider from "@/components/banner";
-import { ContactForm } from "@/components/contactform";
+import ContactForm from "@/components/contactform";
 import Footer from "@/components/footer";
 import GalleryComponent from "@/components/gallery";
 import SaiWorldLocation from "@/components/location";
