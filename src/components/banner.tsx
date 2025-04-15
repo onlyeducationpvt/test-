@@ -1,7 +1,7 @@
 "use client";
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import { Button } from "@/components/ui/button";
+import { Button, PopupTriggerButton } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
 const bannerImages = [
@@ -92,9 +92,9 @@ export default function BannerSlider() {
               <p className="text-2xl font-bold text-blue-700">₹ 1.81 Cr <span className="text-sm font-normal text-gray-600">Onwards</span></p>
             </div>
 
-            <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">
+            <PopupTriggerButton className="w-full bg-blue-600 hover:bg-blue-700 text-white">
               Download Brochure
-            </Button>
+            </PopupTriggerButton>
           </div>
         </Card>
       </div>

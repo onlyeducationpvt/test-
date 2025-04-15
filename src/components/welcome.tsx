@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
+import { Button, PopupTriggerButton } from "@/components/ui/button";
 import { DownloadIcon, ArrowDownCircleIcon, ArrowUpCircleIcon } from "lucide-react";
 
 export default function SaiWorldEmpire() {
@@ -45,12 +45,12 @@ export default function SaiWorldEmpire() {
         </div>
 
         <div className="mt-6">
-          <Button 
+          <PopupTriggerButton 
             className="flex items-center gap-2 bg-blue-700 hover:bg-blue-800 transition-all duration-300 text-white px-6 py-2 rounded-md shadow-md"
           >
             <DownloadIcon className="w-4 h-4" /> 
             Download Brochure
-          </Button>
+          </PopupTriggerButton>
         </div>
       </div>
     </div>

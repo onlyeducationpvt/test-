@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { Button, PopupTriggerButton } from "@/components/ui/button";
 
 export default function PriceList() {
   const priceData = [
@@ -38,9 +38,9 @@ export default function PriceList() {
                     <td className="px-4 py-3">{item.price}</td>
                     <td className="px-4 py-3">{item.tower}</td>
                     <td className="px-4 py-3">
-                      <Button className="bg-blue-700 hover:bg-blue-800 text-white px-3 py-1 rounded-md text-xs shadow-sm">
+                      <PopupTriggerButton className="bg-blue-700 hover:bg-blue-800 text-white px-3 py-1 rounded-md text-xs shadow-sm">
                         Price Breakup
-                      </Button>
+                      </PopupTriggerButton>
                     </td>
                   </tr>
                 ))}
@@ -64,9 +64,9 @@ export default function PriceList() {
 
                   {/* Button Transition */}
                   <div className="absolute inset-0 flex items-end justify-center group-hover:items-center transition-all duration-500">
-                    <Button className="mb-4 opacity-0 group-hover:opacity-100 transition-all duration-500 bg-white text-blue-700 font-semibold hover:bg-gray-100 shadow-md">
+                    <PopupTriggerButton className="mb-4 opacity-0 group-hover:opacity-100 transition-all duration-500 bg-white text-blue-700 font-semibold hover:bg-gray-100 shadow-md">
                       ENQUIRE NOW
-                    </Button>
+                    </PopupTriggerButton>
                   </div>
                 </div>
                 <div className="p-4 text-center font-semibold text-white bg-gradient-to-r from-blue-700 to-blue-500">

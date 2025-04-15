@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Button, PopupTriggerButton } from '@/components/ui/button';
 
 interface GalleryImage {
   id: number;
@@ -65,9 +65,9 @@ export default function ImageGallery() {
         <h2 className="text-2xl sm:text-2xl md:text-3xl font-bold text-blue-900 mb-4 md:mb-6">
         Gallery Of Sai World Empire
         </h2>
-        <Button variant="default" className="bg-blue-800 hover:bg-blue-900 sm:block hidden">
+        <PopupTriggerButton variant="default" className="bg-blue-800 hover:bg-blue-900 sm:block hidden">
           Download Gallery
-        </Button>
+        </PopupTriggerButton>
       </div>
       
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">

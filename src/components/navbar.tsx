@@ -1,7 +1,7 @@
 'use client';
 import React, { useState, useEffect } from "react";
 import { Menu, Home, IndianRupee, LayoutGrid, Wifi, Image, MapPin, Video, Phone } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button, PopupTriggerButton } from "@/components/ui/button";
 import {
   Sheet,
   SheetContent,
@@ -110,9 +110,9 @@ const Navbar = () => {
                     ))}
                   </div>
                   <div className="mt-auto border-t border-gray-100 py-4 px-4">
-                    <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2">
+                    <PopupTriggerButton className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2">
                       Pre Register
-                    </Button>
+                    </PopupTriggerButton>
                     <a 
                       href="tel:+912248972062" 
                       className="flex items-center justify-center gap-2 mt-4 text-gray-700 font-medium"
@@ -175,9 +175,9 @@ const Navbar = () => {
                 </div>
               </a>
               
-              <Button className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 rounded-lg">
+              <PopupTriggerButton className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 rounded-lg">
                 Pre Register
-              </Button>
+              </PopupTriggerButton>
             </div>
           </div>
         </div>

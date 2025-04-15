@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
+import { PopupTriggerButton } from "./ui/button";
 
 type FlickityInstance = {
   select: (index: number) => void;
@@ -78,9 +79,9 @@ const AmenitiesSlider = () => {
       <div className="bg-white rounded-xl shadow-md p-3 sm:p-6">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-4">
         <h2 className="text-2xl sm:text-2xl md:text-3xl font-bold text-blue-900 mb-4 md:mb-6">Amenities Of Sai World Empire</h2>
-        <button className="bg-blue-800 text-white py-2 px-6 rounded-md hover:bg-blue-900 transition-colors">
+        <PopupTriggerButton className="bg-blue-800 text-white py-2 px-6 rounded-md hover:bg-blue-900 transition-colors">
           Download Amenities
-        </button>
+        </PopupTriggerButton>
       </div>
       
       <div className="relative">

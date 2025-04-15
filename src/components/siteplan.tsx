@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
+import { Button, PopupTriggerButton } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
 
@@ -51,9 +51,9 @@ export default function SitePlan() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-500" />
                 {/* Enquire Button */}
                 <div className="absolute inset-0 flex items-end justify-center group-hover:items-center transition-all duration-500">
-                  <Button className="mb-4 opacity-0 group-hover:opacity-100 transition-all duration-500 bg-white text-blue-700 font-semibold hover:bg-gray-100 shadow-md">
+                  <PopupTriggerButton className="mb-4 opacity-0 group-hover:opacity-100 transition-all duration-500 bg-white text-blue-700 font-semibold hover:bg-gray-100 shadow-md">
                     ENQUIRE NOW
-                  </Button>
+                  </PopupTriggerButton>
                 </div>
               </div>
             </Card>
@@ -80,11 +80,11 @@ export default function SitePlan() {
                     />
                     {/* Gradient Overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-500" />
-                    {/* Enquire Button */}
+                    {/* Enquire PopupTriggerButton */}
                     <div className="absolute inset-0 flex items-end justify-center group-hover:items-center transition-all duration-500">
-                      <Button className="mb-4 opacity-0 group-hover:opacity-100 transition-all duration-500 bg-white text-blue-700 font-semibold hover:bg-gray-100 shadow-md">
+                      <PopupTriggerButton className="mb-4 opacity-0 group-hover:opacity-100 transition-all duration-500 bg-white text-blue-700 font-semibold hover:bg-gray-100 shadow-md">
                         ENQUIRE NOW
-                      </Button>
+                      </PopupTriggerButton>
                     </div>
                   </div>
                   <div className="p-4 text-center font-semibold text-white bg-gradient-to-r from-blue-700 to-blue-500">

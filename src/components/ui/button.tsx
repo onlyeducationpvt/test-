@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Slot } from "@radix-ui/react-slot"
 import { cva, type VariantProps } from "class-variance-authority"
+import { usePopup } from '../popupprovider';
 
 import { cn } from "@/lib/utils"
 
@@ -56,4 +57,38 @@ function Button({
   )
 }
 
-export { Button, buttonVariants }
+// New component: PopupTriggerButton that extends the Button component
+function PopupTriggerButton({
+  className,
+  variant,
+  size,
+  asChild = false,
+  onClick,
+  ...props
+}: React.ComponentProps<"button"> &
+  VariantProps<typeof buttonVariants> & {
+    asChild?: boolean
+  }) {
+  const { showPopup } = usePopup();
+  
+  // Handle both the original onClick and the popup trigger
+  const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    if (onClick) {
+      onClick(e);
+    }
+    showPopup();
+  };
+
+  return (
+    <Button
+      className={className}
+      variant={variant}
+      size={size}
+      asChild={asChild}
+      onClick={handleClick}
+      {...props}
+    />
+  );
+}
+
+export { Button, PopupTriggerButton, buttonVariants }
