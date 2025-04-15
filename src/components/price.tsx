@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Card } from "@/components/ui/card";
-import { Button, PopupTriggerButton } from "@/components/ui/button";
+import {  PopupTriggerButton } from "@/components/ui/button";
 
 export default function PriceList() {
   const priceData = [

@@ -1,17 +1,14 @@
 'use client';
 
-import AboutHouseBazaar from "@/components/about";
 import Slider from "@/components/amenities";
 import BannerSlider from "@/components/banner";
 import { ContactForm } from "@/components/contactform";
-import ContactFormWrapper from "@/components/contactformwrapper";
 import Footer from "@/components/footer";
 import GalleryComponent from "@/components/gallery";
 import SaiWorldLocation from "@/components/location";
 import MobileBottomBar from "@/components/MobileBottomBar";
 import PriceList from "@/components/price";
 import SitePlan from "@/components/siteplan";
-import { PopupTriggerButton } from "@/components/ui/button";
 import VirtualSiteVisit from "@/components/virtualtour";
 import SaiWorldEmpire from "@/components/welcome";
 
@@ -20,9 +17,7 @@ export default function Home() {
     <main className="grid grid-cols-12 gap-4 pt-16"> 
       <div className="bg-gray-50 col-span-full lg:col-span-9">
         <BannerSlider />
-        {/* <PopupTriggerButton variant="default" size="lg">
-        Get a Quote
-      </PopupTriggerButton> */}
+
 
         <div id="welcome"><SaiWorldEmpire /></div>
         <div id="price"><PriceList /></div>

@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { Button, PopupTriggerButton } from "@/components/ui/button";
-import { motion } from "framer-motion";
+
 import { Card } from "@/components/ui/card";
+import { PopupTriggerButton } from "./ui/button";
 
 const plans = [
   {

@@ -2,7 +2,7 @@
 "use client";
 import React from 'react';
 import Image from 'next/image';
-import { MapPin, MapPinned, Navigation } from 'lucide-react';
+import {  MapPinned } from 'lucide-react';
 
 export default function LocationMap() {
   const nearbyLocations = [

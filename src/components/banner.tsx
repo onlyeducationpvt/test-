@@ -1,7 +1,7 @@
 "use client";
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import { Button, PopupTriggerButton } from "@/components/ui/button";
+import {  PopupTriggerButton } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
 const bannerImages = [

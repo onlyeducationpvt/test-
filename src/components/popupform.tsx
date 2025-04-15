@@ -10,11 +10,11 @@ import { useToast } from './ui/use-toast';
 import { 
   X, 
   Home, 
-  BadgeCheck, 
+   
   Phone, 
   AtSign, 
   User, 
-  MessageSquare,
+
   Shield, 
   GraduationCap,
   Clock
